@@ -1,0 +1,432 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**, *:before, *:after{
+    box-sizing: border-box;
+}*/
+
+.container{
+    margin: 0 auto;
+    max-width: 940px;
+    color: #3F5D45;
+    font-family: Microsoft JhengHei;
+}
+a{
+    text-decoration: none;
+    color: #3F5D45; 
+}
+ul{
+    list-style-type: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.header ul{
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    
+}
+.header ul a:hover{
+    background: #EAF0ED;
+}
+.header h1 a{
+    display: block;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logo-all-dark.svg");
+    background-repeat: no-repeat;
+    width: 219.5px;
+    height: 40px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space:nowrap;   
+}
+.menu{
+    display: none;
+}
+
+.banner{
+    margin-bottom: 60px;
+}
+
+.content{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.classifier{
+    width: 30%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.classifier a, .classifier h2{
+    display: block;
+    padding: 16px 0px;
+    border: 1px solid #F0F0F0;
+}
+.clickedBg{
+    background: #EAF0ED;
+}
+.classifier a:hover{
+    background: #3F5D45;
+    color: white;
+}
+
+.products {
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.productImg{
+    position: relative;
+}
+.productImg h3{
+    position: absolute;
+    left: 20px;
+    padding: 15px 10px;
+    background: #3F5D45;
+    color: #EAF0ED;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    font-size: 16px;
+}
+.like{
+    position: absolute;
+    right:30px;
+    top: 19px;
+}
+.products li{
+    width: 48%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.productDetails{
+    display: flex;
+    font-size: 20px;
+    line-height: 20px;
+}
+.productName{
+    padding: 14px 33px;
+    border: 1px solid #F0F0F0;
+}
+.price{
+    padding: 14px 25px;
+    border: 1px solid #F0F0F0;
+}
+.addToCart{
+    display: block;
+    padding: 16px 0px;
+    text-align: center;
+    background: #EAF0ED;
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 300px;
+}
+.products a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.pages{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.pages{
+    display: flex;
+}
+.pages a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    border: 1px solid #F0F0F0;
+}
+.pages a:hover{
+    background: #EAF0ED;
+    color: black;
+}
+
+.greenBg{
+    background: #3F5D45;
+}
+.greenBg a, h2{
+    color: #EAF0ED;
+}
+
+.container2{
+    max-width:780px;
+    margin: 0 auto;
+    font-family: Microsoft JhengHei;
+}
+.footerTop{
+    background: #3F5D45;
+}
+.email{
+    display: flex;    
+    align-items: center;
+}
+.emailDes{
+    display: flex;
+}
+.emailDes h3{
+    font-size: 24px;
+    line-height: 29px;
+    margin: 42px 124px 42px 20px;
+    color: #EAF0ED;
+}
+.emailBox{
+    display: flex;
+}
+.inputEmail{
+    position: relative;
+}
+.inputEmail input{
+    padding-left: 50px;
+    width: 256px;
+    height: 56px;
+    background: #EAF0ED;
+    border: none;
+    outline: none;
+}
+.inputEmail img{
+    position: absolute;
+    left: 20px;
+    top: 16px;
+}
+.email a{
+    display: block;
+    padding: 17px 21px;
+    background: #FFE180;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-between;
+    max-width:780px;
+    margin: 0 auto;
+    color: #3F5D45;
+}
+.footerBtm{
+    background: #EAF0ED;
+}
+.sweetasteLogo{
+    width: 172px;
+    height: 27px;
+    padding-top:38px; 
+    margin-bottom: 124px;  
+}
+.contact ul{
+    padding-bottom: 30px;
+}
+.contactInfo li{
+    margin-bottom: 8px;
+    color: #3F5D45;
+    font-family: Microsoft JhengHei;
+}
+.contactLink{
+    display: flex;
+}
+.contactLink img{   
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.quote h3{
+    padding-top: 30px;
+    font-size: 23px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    font-family: LiSong Pro;
+}
+.quote span{
+    display: block;
+    margin-right: 13px;
+}
+.quote p{
+    padding-bottom: 30px;
+}
+
+@media(max-width: 768px){
+    .header{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header ul{
+        width: auto;
+        justify-content: flex-end;
+    }
+    .header li:nth-child(-n+3){
+        display: none;
+    }
+    .header h1 a{
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg");
+        background-repeat: no-repeat;
+        width: 117px;
+        height: 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu:hover{
+        background: #EAF0ED;
+    }
+    .banner{
+        margin-bottom: 0px;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .classifier{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .classifier ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .classifier li{
+        width: 50%;
+    }
+    .products{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .products li{
+        width: 40%;
+    }
+    .pages{
+        justify-content: center;
+    }
+    .email{
+        flex-direction: column;
+    }
+    .emailDes h3{
+        margin: 30px 20px;
+    }
+    .emailBox{
+        margin-bottom: 30px;
+    }
+    .inputEmail input{
+        max-width: 400px;
+    }
+    .container2, .container3{
+        max-width: 400px;
+    }
+    
+    .container3{
+        flex-direction: column;
+    }
+    .sweetasteLogo{
+        margin-bottom: 39.5px;
+    }
+    .quote {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .quote h3{
+        display: none;
+    }
+}
+
+@media(max-width: 375px){
+    .header li:nth-child(-n+3){
+        display: none;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .classifier ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .classifier li{
+        width: 100%;
+    }
+    .products {
+        justify-content: center;
+    }
+    .products li{
+        width: 83%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pages{
+        justify-content: center;
+    }
+    .inputEmail input{
+        max-width: 190px;
+    }
+    .container2, .container3{
+        max-width: 315px;
+    }
+    
+    
+}
+
